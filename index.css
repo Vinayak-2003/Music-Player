@@ -1,0 +1,107 @@
+body{
+    background-image: url(images/wallpaper.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.box{                                               /* Box  */
+    text-align:center;
+    height:40rem;
+    width:30rem;
+    background-color:white;
+    padding:2.5rem;
+    box-sizing:border-box;
+    box-shadow: 0 0 10px 5px rgba(60, 60, 60, 0.2);
+    padding:2rem;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    border-radius:7%;
+}
+
+@media only screen and (max-width: 500px) {
+    body{
+        background-size:auto;
+        background-repeat: no-repeat;
+    }
+
+    .box{
+        height:40rem;
+        width:25rem;
+    }
+
+    .img{
+        height:10rem;
+    }
+}
+
+#songName{                                             /* song name */
+    font-family: 'Playfair Display', serif;
+    font-size:3rem;
+    text-shadow: 4px 4px #DDDDDD;
+}
+
+#singer{                                              /* singer name */
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:2.2rem;
+    color: #B2B2B2;
+}
+
+img{                                                  /* song image */
+    align-items: center;
+    height:20rem;
+    margin-top:1rem;
+    margin-bottom:3rem;
+    box-shadow: 0 0 10px 5px rgba(1, 1, 1, 0.2);
+    border-radius:50%;
+}
+
+i{                                          /* all icons */
+    font-size: 1.3rem;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.music_controls .fa-backward:hover{
+    color: #B2B2B2;
+}
+
+.music_controls .fa-forward:hover{
+    color: #B2B2B2;
+}
+
+.music_controls .fa-play:hover{
+    background-color: #B2B2B2;
+    opacity: 0.5;
+    box-shadow: 0 0 10px 5px black;
+}
+
+.fa-play , .fa-pause{                                      /*  play button */
+    width: 3rem;
+    height: 3rem;
+    border-radius:50%;
+    background-color:black;
+    color:white;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.anime{
+    animation: rotatePlayer 4s linear infinite;
+}
+
+@keyframes rotatePlayer{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
